@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #1f232c;
+    line-height: 1.15;
+}
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+    color: #1f232c;
+    font-size: 13px;
+}
+img {
+	/* agar img tidak melebihi element parentnya */
+	max-width: 100%;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+	outline: none;
+	/* menambah efek transisi ketika dihover */ 
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 1em;
+}
+h1, h2, h3, h4, h5, h6, b, strong {
+	font-weight: 700; /* bukan bold atau bolder karena saya menggunakan google font */
+}
+#container {
+	background: #F6F8F8;
+}
+#header ul {
+	background-color: #436BB2;
+	padding: 0 80px;
+}
+#header ul div:last-child {
+	float: right;
+	border-left: 1px solid #46a;
+	border-right: 1px solid #47b;
+}
+#header ul div:first-child {
+	float: left;
+	border-left: 1px solid #46a;
+	border-right: 1px solid #47b;
+}
+#header ul div li {
+	float: left;
+	padding: 15px 20px;
+	border-right: 1px solid #46a;
+	border-left: 1px solid #47b;
+	cursor: pointer;
+}
+#header ul div li:hover {
+	background: #F6F8F8;
+}
+#header ul div li:hover a {
+	color: #436BB2;
+}
+/* #header ul li:first-child, #header ul li:last-child { */
+	/* border-left: 1px solid #777; */
+/* } */
+#header ul div li a {
+	color: #F6F8F8;
+	font-weight: 700;
+}
+h1 {
+	color: #436BB2;
+	font-size: 50px;
+	font-family: 'Exo 2', sans-serif;
+	padding: 50px 80px;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+#wrapper {
+	background: #fff;
+	margin: 0 80px;
+	padding: 50px 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 2px #aaa;
+}
+#content {
+	float: left;
+	width: 65%;
+	padding: 0 5% 0 0;
+	box-sizing: border-box;
+}
+#content h2 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 40px;
+	margin: 0 0 20px;
+}
+.sub {
+	font-weight: 700;
+	color: #aaa;
+}
+.sub a {
+	color: #436BB2;
+}
+#content img {
+	width: 100%;
+}
+#content #img {
+	width: 100%;
+	margin: 20px 0 30px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+#content p {
+	line-height: 1.8;
+}
+#content #more {
+	padding: 10px;
+	background: #436BB2;
+	float: left;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#content #more a {
+	color: #fff;
+	font-weight: 700;
+}
+#content #more:hover {
+	background: #fff;
+}
+#content #more:hover a {
+	color: #436BB2;
+}
+#sidebar {
+	float: right;
+	Width: 35%;
+}
+#sidebar h3 {
+	float: left;
+	color: #aaa;
+}
+#sidebar a {
+	float: right;
+	font-weight: 700;
+	color: #436BB2;
+}
+#sidebar ul li {
+	float: left;
+	width: 100%;
+	margin: 20px 0;
+	cursor: pointer;
+}
+#sidebar ul li .img {
+	width: 40%;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+}
+#sidebar ul li ul {
+	width: 50%;
+	float: left;
+}
+#sidebar ul li ul li{
+	margin: 0;
+}
+#sidebar ul li h4 {
+	background: #48BDB8;
+	color: #fff;
+	padding: 3px;
+	font-size: 12px;
+	float: left;
+	border-radius: 5px;
+}
+#sidebar ul li p {
+	font-size: 20px;
+	display: block;
+	margin: 0 10% 10px 0;
+	font-weight: 700;
+}
+#sidebar ul li ul li:last-child p {
+	color: #aaa;
+}
+
+@media only screen and (min-width:769px) {
+	i.fa {
+		width: 0px;
+		visibility: hidden;
+	}
+	i.fa-home {
+		width: auto;
+		visibility: visible;
+		font-size: 30px;
+	}
+	#header ul div:first-child li:first-child {
+		padding: 9px 20px;
+	}
+}
+@media only screen and (max-width:768px) {
+	i.fa {
+		width: 20px;
+		visibility: visible;
+	}
+	#header ul div:first-child li:first-child {
+		display: none;
+	}
+	#header ul {
+		padding: 0;	
+	}
+	h1 {
+		font-size: 40px;
+		padding: 40px 0;
+		text-align: center;
+	}
+	#wrapper {
+		margin: 0;
+	}
+	span {
+		display: none;
+	}
+	#header ul div:first-child li:nth-child(2) a span, 
+	#header ul div:first-child li:nth-child(3) a span {
+		display: inline;
+	}
+	#content, #sidebar {
+		float: none;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	#content {
+		padding-right: 0;
+	}
+	#content h2 {
+		font-size: 30px;	
+	}
+	#sidebar {
+		border-top: 2px solid #436BB2;
+		padding-top: 20px;
+	}
+}
+@media only screen and (max-width:480px) {
+	#header ul div li {
+		padding: 15px;
+	}
+	#header ul div:first-child li:nth-child(2) a span, 
+	#header ul div:first-child li:nth-child(3) a span {
+		display: none;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	#content h2 {
+		font-size: 25px;	
+	}
+	#sidebar ul li ul {
+		width: 100%;
+	}
+	#sidebar ul li .img {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
